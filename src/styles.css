@@ -1,1 +1,74 @@
-/* You can add global styles to this file, and also import other style files */
+/* Estilo global para la aplicación */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f5f0; /* Fondo suave, neutro */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh; /* Altura completa de la ventana */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor del formulario */
+.container {
+  background-color: #fff;
+  padding: 30px; /* Aumenta el padding para dar más espacio alrededor */
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Sombra elegante */
+  max-width: 400px;
+  width: 100%; /* Asegúrate de que el contenedor no sea más ancho de la pantalla en pantallas pequeñas */
+}
+
+/* Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Añade espacio entre los campos */
+}
+
+/* Inputs y campos del formulario */
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 0; /* Elimina márgenes no deseados */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f0ebe4;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #27ae60;
+}
+
+/* Etiquetas */
+label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px; /* Añade margen inferior a las etiquetas */
+}
+
+/* Botón */
+button {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #218c54;
+}
